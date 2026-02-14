@@ -7,7 +7,6 @@ async function askAI(startMessage) {
 
     if (!message) return;
 
-    // Відображення повідомлення користувача в чаті
     const container = document.querySelector('.chat__messages');
     const message__user = document.createElement('div');
 
