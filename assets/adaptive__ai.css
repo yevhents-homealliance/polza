@@ -1,0 +1,24 @@
+@media (max-width: 1000px) {
+    .container , .chat__messages , .chat__input {
+        width: 80%;
+    }
+}
+@media (max-width: 800px) {
+    .chat__message {
+        font-size: 15px;
+    }
+}
+@media (max-width: 650px) {
+    .container , .chat__messages , .chat__input {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .chat__message {
+        font-size: 12px;
+        max-width: 250px;
+    }
+    .chat__input {
+        border-radius: 0px;
+    }
+}
