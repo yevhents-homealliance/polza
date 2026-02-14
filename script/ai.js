@@ -19,7 +19,7 @@ async function askAI(startMessage) {
     document.getElementById('chatInput').value = '';
 
     try {
-        const res = await fetch('http://localhost/api/ask-ai', {
+        const res = await fetch('https://c86b-176-98-30-40.ngrok-free.app/api/ask-ai', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
