@@ -26,10 +26,6 @@
     }
 }
 @media (max-width: 550px) {
-    .chat__message {
-        font-size: 10px;
-        max-width: 200px;
-    }
     .chat__welcome {
         font-size: 13px;
         width: 75%;
