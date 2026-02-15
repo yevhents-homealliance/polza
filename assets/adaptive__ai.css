@@ -5,7 +5,7 @@
 }
 @media (max-width: 800px) {
     .chat__message {
-        font-size: 15px;
+        font-size: 14px;
     }
     .chat__welcome {
         font-size: 15px;
