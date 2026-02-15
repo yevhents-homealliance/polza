@@ -27,7 +27,6 @@
 }
 @media (max-width: 550px) {
     .chat__welcome {
-        font-size: 13px;
         width: 75%;
     }
     .chat__span-adaptive {
