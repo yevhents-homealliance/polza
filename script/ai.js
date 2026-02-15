@@ -2,6 +2,8 @@ async function askAI(startMessage) {
 
     const welcome__block = document.querySelector('.chat__welcome');
     const message = startMessage ? startMessage : document.getElementById('chatInput').value;
+    const chatInput = document.querySelector('.chat__input');
+    chatInput.style.bottom = '0px';
 
     welcome__block.style.display = 'none';
 
@@ -13,7 +15,12 @@ async function askAI(startMessage) {
     message__user.classList.add('chat__user-message' , 'chat__message');
     message__user.textContent = message;
 
+
     container.appendChild(message__user);
+
+    setTimeout(() => {
+        message__user.classList.add('chat__message--visible');
+    }, 10);
     
     document.getElementById('chatInput').value = '';
 
@@ -34,7 +41,6 @@ async function askAI(startMessage) {
 
         console.log(data);
 
-        // Відображення відповіді AI в чаті
         const container = document.querySelector('.chat__messages');
         const aiMessage = document.createElement('div');
 
@@ -42,6 +48,10 @@ async function askAI(startMessage) {
         aiMessage.textContent = data.answer || 'Упс, щось пішло не так. Спробуйте ще раз.';
 
         container.appendChild(aiMessage);
+
+        setTimeout(() => {
+            aiMessage.classList.add('chat__message--visible');
+        }, 10);
     } 
     catch (err) {
         console.log(err);
