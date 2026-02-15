@@ -10,6 +10,7 @@
     .chat__welcome {
         font-size: 15px;
     }
+
 }
 @media (max-width: 650px) {
     .container , .chat__messages , .chat__input {
@@ -24,9 +25,6 @@
 @media (max-width: 550px) {
     .chat__welcome {
         width: 75%;
-    }
-    .chat__message {
-        font-size: 17px;
     }
     .chat__span-adaptive {
         display: none;
