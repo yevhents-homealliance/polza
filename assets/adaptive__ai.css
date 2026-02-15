@@ -25,6 +25,9 @@
     .chat__welcome {
         width: 75%;
     }
+    .chat__message {
+        font-size: 17px;
+    }
     .chat__span-adaptive {
         display: none;
     }
