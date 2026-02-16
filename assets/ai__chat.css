@@ -172,3 +172,38 @@
     height: 20px;
     cursor: pointer;
 }
+
+
+.chat__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat__loader {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.chat__button.loading .chat__send-icon {
+    display: none;
+}
+
+.chat__button.loading .chat__loader {
+    display: block;
+}
+
+.chat__button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
