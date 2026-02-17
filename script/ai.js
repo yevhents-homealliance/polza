@@ -32,7 +32,7 @@ async function askAI(startMessage) {
     document.getElementById('chatInput').value = '';
 
     try {
-        const res = await fetch('https://9d9d-176-98-31-40.ngrok-free.app/ask-faq', {
+        const res = await fetch('https://9d9d-176-98-31-40.ngrok-free.app/api/ask-faq', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
